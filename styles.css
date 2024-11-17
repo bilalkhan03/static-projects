@@ -1,0 +1,81 @@
+/* General body styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0e0e0; /* Light gray background */
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+  background: #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px #b3b3b3, -8px -8px 15px #ffffff;
+  width: 360px;
+  padding: 20px;
+}
+
+/* Display styling */
+#display {
+  width: 100%;
+  height: 70px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 26px;
+  text-align: right;
+  box-shadow: inset 4px 4px 6px #b3b3b3, inset -4px -4px 6px #ffffff;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  color: #333; /* Dark text for readability */
+}
+
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 12px; /* Gap between buttons */
+}
+
+button {
+  height: 70px; /* Larger buttons */
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow: 6px 6px 10px #b3b3b3, -6px -6px 10px #ffffff;
+  color: #333; /* Default dark text */
+  cursor: pointer;
+  transition: all 0.1s ease-in-out; /* Smooth transition for click effect */
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+
+/* Click (active) effect */
+button:active {
+  box-shadow: inset 6px 6px 10px #b3b3b3, inset -6px -6px 10px #ffffff;
+  transform: scale(0.95); /* Slightly shrink button when clicked */
+}
+
+/* Function keys (+, -, *, /) */
+button.function {
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+/* DEL button (red) */
+button.special {
+  background: #f44336; /* Red background */
+  color: #fff; /* White text */
+}
+
+/* Equal button (green) */
+button.equal {
+  background: #28a745; /* Green background */
+  color: #fff; /* White text */
+}
