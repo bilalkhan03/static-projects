@@ -1,0 +1,170 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .btn-hover {
+    background-color: #3498db;
+    color: white;
+  }
+  .btn-hover:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Click Effect */
+  .btn-click {
+    background-color: #e74c3c;
+    color: white;
+  }
+  .btn-click:active {
+    transform: scale(0.95);
+  }
+  
+  /* Shadow Effect */
+  .btn-shadow {
+    background-color: #2ecc71;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .btn-shadow:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Glow Effect */
+  .btn-glow {
+    background-color: #9b59b6;
+    color: white;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 10px #9b59b6, 0 0 40px #8e44ad;
+  }
+  
+  /* Scale Effect */
+  .btn-scale {
+    background-color: #f1c40f;
+    color: black;
+  }
+  .btn-scale:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Rotate Effect */
+  .btn-rotate {
+    background-color: #34495e;
+    color: white;
+  }
+  .btn-rotate:hover {
+    transform: rotate(360deg);
+  }
+  
+  /* Bounce Effect */
+  .btn-bounce {
+    background-color: #d35400;
+    color: white;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Wave Effect */
+  .btn-wave {
+    background-color: #1abc9c;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-wave:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: wave 0.8s ease-out;
+  }
+  @keyframes wave {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(4);
+    }
+  }
+  
+  /* Gradient Effect */
+  .btn-gradient {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+  }
+  .btn-gradient:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+  }
+  
+  /* Border Animation */
+  .btn-border {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    position: relative;
+  }
+  .btn-border:hover {
+    color: white;
+    background-color: #333;
+  }
+  .btn-border:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: border-fade 0.8s ease-in-out;
+  }
+  @keyframes border-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
